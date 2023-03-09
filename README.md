@@ -13,22 +13,21 @@ Follow the prompts and enter the requested information. An example execution is 
 Data Format
 For comparing multiple samples, the data should be formatted as follows:
 
-```css
-
+```
 sample1 = [ [x,x,x,x,x], [x,x,x,x,x], ... ]
 sample2 = [ [x,x,x,x,x], [x,x,x,x,x], ... ]
 ...
 ```
 For comparing single model, the data should be formatted as follows:
 
-```css
-Copy code
+```
 sample1 = [x,x,x,x,x]
 sample2 = [x,x,x,x,x]
 ...
 ```
 Example Execution
-```vbnet
+
+```bash
 Copy code
 Enter filename: General.txt
 Are you comparing multiple models? (y/n): y
