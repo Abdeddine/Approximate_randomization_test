@@ -28,6 +28,8 @@ sample2 = [x,x,x,x,x]
 
 ## Example Execution
 
+Multiple model execution:
+
 ```bash
 Enter filename: General.txt
 Are you comparing multiple models? (y/n): y
@@ -40,7 +42,29 @@ Enter the main sample you want to compare: A
 Enter samples names (separated with space): B C D
 Enter the number of null hypothesis sample: 1000
 ```
-## Plotting
+
+Single model execution
+
+```bash
+Enter filename: General.txt
+Are you camparing multiple models? (y/n): n
+Are you comparing multiple algorithms to one? (y/n): n
+Enter samples names (separated with space): A B
+Enter the number of null hypothesis sample: 1000
+```
+
+## Output
+If you are comparing the samples in a singel model you will get the output as follows: 
+For two samples comparaison:
+```bash
+The p-value resulting from the comparison between  A  and  B  is  0.9960000000000008
+```
+For multiple samples comparaison:
+```bash
+The p-values resulting from the comparison between
+A  and  B :  0.9920000000000008
+A  and  C :  0.6340000000000005
+```
 If you are comparing multiple models, the code will plot the p-values and save the plot in the "Plotting" repository.
 ## Contact
 For any questions or feedback, please feel free to reach out to us at Abderrafiabdeddine@gmail.com.
