@@ -29,7 +29,6 @@ sample2 = [x,x,x,x,x]
 # Example Execution
 
 ```bash
-Copy code
 Enter filename: General.txt
 Are you comparing multiple models? (y/n): y
 You will get the p-values as a plot
@@ -43,3 +42,5 @@ Enter the number of null hypothesis sample: 1000
 ```
 # Plotting
 If you are comparing multiple models, the code will plot the p-values and save the plot in the "Plotting" repository.
+## Contact
+For any questions or feedback, please feel free to reach out to us at Abderrafiabdeddine@gmail.com.
