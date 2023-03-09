@@ -82,12 +82,16 @@ def AR_test(f1, index, algorithms_names, null_distribution_length,models,title):
                 if algorithms_ave_diff_tasks[i][j][0] <= algorithms_ave_diff_tasks[i][j][-1]:
                     algorithms_p_value_tasks[i][j] += 1/null_distribution_length
     
-    if len(algorithms_p_value_tasks) == 1:
-        print("The p-value is ", algorithms_p_value_tasks[0][0])
+    if len(algorithms_p_value_tasks) != 0 and len(algorithms_p_value_tasks[0]):
+        if len(algorithms_p_value_tasks) == 1:
+            print("The p-value resulting from the comparison between ", algorithms_names[0], " and ",algorithms_names[1]," is ", algorithms_p_value_tasks[0][0])
+        else:
+            print("The p-values resulting from the comparison between")
+            for index_algorithm_name in range(1,len(algorithms_names)):
 
+                print(algorithms_names[0], " and ",algorithms_names[index_algorithm_name],": ", algorithms_p_value_tasks[index_algorithm_name-1][0])
     else:
         plot_pvalues(algorithms_p_value_tasks, index, algorithms_names,models,title)
-
 
 
 
@@ -96,7 +100,7 @@ if __name__ == "__main__":
     filename = input("Enter filename: ")
     bool = input("Are you camparing multiple models? (y/n): ")
     if bool =='y':
-        print("You will get the p-values as a plot\n")
+        print("You will get the p-values as a plot.")
         user_list = input("Enter the list of index of the models to put as x axis (separated with space): ")
         index_string = user_list.split()
         index = [int(_) for _ in index_string]
