@@ -2,7 +2,7 @@
 
 This is a Python implementation of the Approximated Randomization Test, which can be used to compare multiple samples or multiple models to a main sample. All data sampling should have the same size and be written in one file.
 
-Usage
+# Usage
 Clone this repository and navigate to the project directory.
 Prepare your data file according to the format specified below.
 Execute the code by running the following command in your terminal:
@@ -10,7 +10,7 @@ Execute the code by running the following command in your terminal:
 python approximated_randomization.py
 ```
 Follow the prompts and enter the requested information. An example execution is provided below.
-Data Format
+# Data Format
 For comparing multiple samples, the data should be formatted as follows:
 
 ```
@@ -25,7 +25,8 @@ sample1 = [x,x,x,x,x]
 sample2 = [x,x,x,x,x]
 ...
 ```
-Example Execution
+
+# Example Execution
 
 ```bash
 Copy code
@@ -40,5 +41,5 @@ Enter the main sample you want to compare: A
 Enter samples names (separated with space): B C D
 Enter the number of null hypothesis sample: 1000
 ```
-Plotting
+# Plotting
 If you are comparing multiple models, the code will plot the p-values and save the plot in the "Plotting" repository.
