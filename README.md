@@ -1,13 +1,13 @@
-# Approximated_randomization_test
+# Approximate_randomization_test
 
-This is a Python implementation of the Approximated Randomization Test, which can be used to compare multiple samples or multiple models to a main sample. All data sampling should have the same size and be written in one file.
+This is a Python implementation of the Approximate Randomization Test, which can be used to compare multiple samples or multiple models to a main sample. All data sampling should have the same size and be written in one file.
 
 ## Usage
 Clone this repository and navigate to the project directory.
 Prepare your data file according to the format specified below.
 Execute the code by running the following command in your terminal:
 ```bash
-python approximated_randomization.py
+python approximate_randomization.py
 ```
 Follow the prompts and enter the requested information. An example execution is provided below.
 ## Data Format
