@@ -82,7 +82,7 @@ def AR_test(f1, index, algorithms_names, null_distribution_length,models,title):
                 if algorithms_ave_diff_tasks[i][j][0] <= algorithms_ave_diff_tasks[i][j][-1]:
                     algorithms_p_value_tasks[i][j] += 1/null_distribution_length
     
-    if len(algorithms_p_value_tasks) != 0 and len(algorithms_p_value_tasks[0]):
+    if len(algorithms_p_value_tasks) != 0 and len(algorithms_p_value_tasks[0])==1:
         if len(algorithms_p_value_tasks) == 1:
             print("The p-value resulting from the comparison between ", algorithms_names[0], " and ",algorithms_names[1]," is ", algorithms_p_value_tasks[0][0])
         else:
